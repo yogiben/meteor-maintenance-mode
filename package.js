@@ -21,9 +21,3 @@ Package.onUse(function(api) {
     'lib/client/router.coffee'
   ], 'client');
 });
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('yogiben:admin-maintenance-mode');
-  api.addFiles('yogiben:admin-maintenance-mode-tests.js');
-});
