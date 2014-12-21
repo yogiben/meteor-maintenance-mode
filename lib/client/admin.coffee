@@ -9,6 +9,10 @@ AdminSettingsTypes.MaintenanceMode =
 				type: 'boolean-select'
 	'value.message':
 		type: String
+		optional: true
+	'value.template':
+		type: String
+		optional: true
 	'value.redirect':
 		type: String
 		optional: true

@@ -11,4 +11,6 @@ Router.onBeforeAction ->
 
 	if isRouteDisabled and isMaintenanceEnabled and not isSuperUser
 		@redirect maintenance?.redirect or '/'
-	@next()
+		@render maintenance?.template or 'adminMaintenanceMode'
+	else
+		@next()

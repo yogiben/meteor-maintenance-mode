@@ -12,11 +12,15 @@ Package.onUse(function(api) {
   	'coffeescript',
     'underscore',
     'tracker',
+    'templating',
     'iron:router@1.0.5',
     'alanning:roles@1.2.13'
   ]);
   
   api.addFiles([
+    'lib/client/templates.html',
+    'lib/client/styles.css',
+    'lib/client/templates.coffee',
   	'lib/client/admin.coffee',
     'lib/client/router.coffee'
   ], 'client');
