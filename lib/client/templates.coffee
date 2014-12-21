@@ -7,5 +7,5 @@ Template.adminMaintenanceMode.rendered = ->
 
 Template.adminMaintenanceMode.helpers
 	message: ->
-		maintenance = AdminSettings.get 'Maintenance mode'
-		maintenance.message or "We'll back shortly"
+		maintenance = Meteor.settings?.public?.maintenance_mode or AdminSettings.get 'Maintenance mode'
+		maintenance?.message or "We'll back shortly"
